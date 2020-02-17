@@ -93,6 +93,9 @@ MIT
 @angular/router
 MIT
 
+@angular/service-worker
+MIT
+
 angular2-flash-messages
 MIT
 

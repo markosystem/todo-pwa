@@ -1,0 +1,110 @@
+{
+  "configVersion": 1,
+  "timestamp": 1581899006953,
+  "index": "/todo-pwa/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "urls": [
+        "/todo-pwa/favicon.ico",
+        "/todo-pwa/index.html",
+        "/todo-pwa/main-es2015.32cda3aca0033b1aaa6e.js",
+        "/todo-pwa/main-es5.32cda3aca0033b1aaa6e.js",
+        "/todo-pwa/manifest.webmanifest",
+        "/todo-pwa/polyfills-es2015.5b10b8fd823b6392f1fd.js",
+        "/todo-pwa/polyfills-es5.3e8196928d184a6e5319.js",
+        "/todo-pwa/runtime-es2015.c5fa8325f89fc516600b.js",
+        "/todo-pwa/runtime-es5.c5fa8325f89fc516600b.js",
+        "/todo-pwa/styles.48bbc39f2a1f0141f23b.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "urls": [
+        "/todo-pwa/assets/icons/icon-128x128.png",
+        "/todo-pwa/assets/icons/icon-144x144.png",
+        "/todo-pwa/assets/icons/icon-152x152.png",
+        "/todo-pwa/assets/icons/icon-192x192.png",
+        "/todo-pwa/assets/icons/icon-384x384.png",
+        "/todo-pwa/assets/icons/icon-512x512.png",
+        "/todo-pwa/assets/icons/icon-72x72.png",
+        "/todo-pwa/assets/icons/icon-96x96.png",
+        "/todo-pwa/fa-brands-400.067595ad77ecc0db9c81.woff2",
+        "/todo-pwa/fa-brands-400.57dcda6f368ea90179f7.eot",
+        "/todo-pwa/fa-brands-400.9d67fa1429375bd2a899.svg",
+        "/todo-pwa/fa-brands-400.9ec698d1a597bff5df33.ttf",
+        "/todo-pwa/fa-brands-400.b564da88bbf0c4aa446f.woff",
+        "/todo-pwa/fa-regular-400.3351f435b3c9037fd88a.eot",
+        "/todo-pwa/fa-regular-400.4165c2688309cbfb1b87.woff2",
+        "/todo-pwa/fa-regular-400.5d0861781aeef6c82fda.svg",
+        "/todo-pwa/fa-regular-400.73cf49a2232c06c920b7.woff",
+        "/todo-pwa/fa-regular-400.a0e3ac82940c1998c597.ttf",
+        "/todo-pwa/fa-solid-900.0724bb8b89ab6b8b9b7d.svg",
+        "/todo-pwa/fa-solid-900.55eb2a60e8181f0e68b5.woff2",
+        "/todo-pwa/fa-solid-900.75f38a159982b6bd1704.ttf",
+        "/todo-pwa/fa-solid-900.89e02bae13c9131c7468.eot",
+        "/todo-pwa/fa-solid-900.cdfec5cf5e9840889790.woff"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "/todo-pwa/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
+    "/todo-pwa/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
+    "/todo-pwa/assets/icons/icon-152x152.png": "7479a9477815dfd9668d60f8b3b2fba709b91310",
+    "/todo-pwa/assets/icons/icon-192x192.png": "1abd80d431a237a853ce38147d8c63752f10933b",
+    "/todo-pwa/assets/icons/icon-384x384.png": "329749cd6393768d3131ed6304c136b1ca05f2fd",
+    "/todo-pwa/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
+    "/todo-pwa/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
+    "/todo-pwa/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
+    "/todo-pwa/fa-brands-400.067595ad77ecc0db9c81.woff2": "3a175545f961094f3614f208f2166187b642355f",
+    "/todo-pwa/fa-brands-400.57dcda6f368ea90179f7.eot": "e6feaa7a93ad42acb348529c9a684a0cf5cbf2ee",
+    "/todo-pwa/fa-brands-400.9d67fa1429375bd2a899.svg": "8730dd14f32b5c64c935b7d0d583589703fc6dd7",
+    "/todo-pwa/fa-brands-400.9ec698d1a597bff5df33.ttf": "d9b2f287f46c950737c434e4153777968a73cecc",
+    "/todo-pwa/fa-brands-400.b564da88bbf0c4aa446f.woff": "3023db69a482111f7a17f29cee621a933cc5f4b9",
+    "/todo-pwa/fa-regular-400.3351f435b3c9037fd88a.eot": "af1d634a307219795957412a586abaf626f4829b",
+    "/todo-pwa/fa-regular-400.4165c2688309cbfb1b87.woff2": "37b761c26708037d19664cebea70416852487087",
+    "/todo-pwa/fa-regular-400.5d0861781aeef6c82fda.svg": "53983550b89268aff9bbe00cbde3ef423c00716f",
+    "/todo-pwa/fa-regular-400.73cf49a2232c06c920b7.woff": "dc2741902e041fc638697d76733b6252c68f1f99",
+    "/todo-pwa/fa-regular-400.a0e3ac82940c1998c597.ttf": "bb89a35e00d0ba8a5382cc66809abe3d5cd3e932",
+    "/todo-pwa/fa-solid-900.0724bb8b89ab6b8b9b7d.svg": "cae06b2de99cc3f05225d54eb630352dc40dc6ef",
+    "/todo-pwa/fa-solid-900.55eb2a60e8181f0e68b5.woff2": "af776f52d579da211590e0691d554b88a69dfe61",
+    "/todo-pwa/fa-solid-900.75f38a159982b6bd1704.ttf": "481530e4da272092a90415b3403b4e533416e295",
+    "/todo-pwa/fa-solid-900.89e02bae13c9131c7468.eot": "e13aaeda706af85d9382d7c39f5a3f79d612cd31",
+    "/todo-pwa/fa-solid-900.cdfec5cf5e9840889790.woff": "120dab7a8a93da819ab3025da6a9f3d3ccd65cce",
+    "/todo-pwa/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
+    "/todo-pwa/index.html": "67853da9abb58869558f6d6d93f0c7e1e4b098c3",
+    "/todo-pwa/main-es2015.32cda3aca0033b1aaa6e.js": "728607652338f7611f0b0baecdc04e54315e6b62",
+    "/todo-pwa/main-es5.32cda3aca0033b1aaa6e.js": "cc266fb542c8545460a905a5b34353b14517136e",
+    "/todo-pwa/manifest.webmanifest": "de995fb50242d94851ae327dd90b796366e1f778",
+    "/todo-pwa/polyfills-es2015.5b10b8fd823b6392f1fd.js": "9abfe15f17820a646e3d51c420908d9f8f7b69b8",
+    "/todo-pwa/polyfills-es5.3e8196928d184a6e5319.js": "a9abcb7b9e74feed315773004b623373fdf3fada",
+    "/todo-pwa/runtime-es2015.c5fa8325f89fc516600b.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
+    "/todo-pwa/runtime-es5.c5fa8325f89fc516600b.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
+    "/todo-pwa/styles.48bbc39f2a1f0141f23b.css": "535b814626ba46f3941009fdbc2a25d01d3fb94d"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ]
+}
