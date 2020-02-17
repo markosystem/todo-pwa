@@ -1,0 +1,94 @@
+<!-- mensagens -->
+<flash-messages></flash-messages>
+
+<div class="container">
+    <!-- botões de ações -->
+    <div class="buttons-angular">
+        <button (click)="changeMode('add')" class="btn btn-primary btn-sm" *ngIf="mode === 'list'">
+            <i class="fa fa-plus" aria-hidden="true"></i>
+            Nova
+        </button>
+        <button (click)="removelAll()" *ngIf="todos.length > 0" class="btn btn-dark btn-sm">
+            <i class="fas fa-trash-alt"></i>
+            Limpar
+        </button>
+    </div>
+    <br />
+    <!-- tabela de apresentação dos botões -->
+    <div *ngIf="mode == 'list'">
+        <table class="table table-bordered table-sm">
+            <thead>
+                <tr>
+                    <th scope="col" class="w-10">#</th>
+                    <th scope="col" class="w-50">Descrição</th>
+                    <th scope="col" class="w-20">Data</th>
+                    <th scope="col" class="w-20 text-center">Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngIf="todos.length == 0">
+                    <td colspan="4">
+                        <p>Nenhuma tarefa registrada!</p>
+                    </td>
+                </tr>
+                <tr *ngFor="let to of todos">
+                    <th scope="row">{{to.id}}</th>
+                    <td class="{{to.done ? 'done':'undone'}}">
+                        {{to.description}}
+                    </td>
+                    <td class="{{to.done ? 'done':'undone'}}">
+                        {{ to.date ? (to.date | date:'medium'):'-' }}
+                    </td>
+                    <td class="text-center">
+                        <button (click)="markAsDone(to)" *ngIf="!to.done" class="btn btn-default btn-sm">
+                            <i class="far fa-square"></i></button>
+                        <button (click)="markAsUndone(to)" *ngIf="to.done" class="btn btn-default btn-sm">
+                            <i class="far fa-check-square"></i></button>
+                        <button (click)="setDataForm(to)" class="btn btn-default btn-sm"><i
+                                class="fa fa-edit"></i></button>
+                        <button (click)="remove(to)" type="button" class="btn btn-default btn-sm"><i
+                                class="fa fa-times"></i></button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- formulário cadastro de tarefas -->
+    <div class="container-form mx-auto" *ngIf="mode == 'add'">
+        <form [formGroup]="form" class="formTarefa">
+            <div class="form-group">
+                <label for="nomeTarefa" class="font-weight-bold">Nome da Tarefa</label>
+                <input type="hidden" formControlName="id" class="form-control">
+                <input type="text" formControlName="description" class="form-control" placeholder="Informe a Tarefa!"
+                    id="nomeTarefa">
+                <small class="danger"
+                    *ngIf='form.controls.description.invalid && !form.controls.description.pristine'>Este
+                    campo deve conter entre 3 a 40 caracteres!</small>
+            </div>
+            <div class="form-group">
+                <label class="font-weight-bold">Status da Tarefa</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" id="realizada" name="done" [value]=true
+                        formControlName="done">-
+                    <label class="form-check-label" for="realizada">Realizada</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" id="realizar" name="done" [value]=false
+                        formControlName="done">-
+                    <label class="form-check-label" for="realizar">A realizar</label>
+                </div>
+            </div>
+            <div class="buttons">
+                <button (click)="add()" class="btn btn-success btn-sm" type="button">
+                    <i class="fas fa-save"></i>
+                    Salvar
+                </button>
+                <button (click)="changeMode('list')" class="btn btn-danger btn-sm" *ngIf="mode === 'add'" type="button">
+                    <i class="fa fa-ban" aria-hidden="true"></i>
+                    Cancelar
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
