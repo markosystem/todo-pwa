@@ -8,6 +8,8 @@ import { TodoComponent } from './todo/todo.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { FlashMessagesModule } from 'angular2-flash-messages';
 import { DatePipe } from '@angular/common';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,8 @@ import { DatePipe } from '@angular/common';
     BrowserAnimationsModule,
     MatToolbarModule,
     ReactiveFormsModule,
-    FlashMessagesModule.forRoot()
+    FlashMessagesModule.forRoot(),
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [DatePipe],
   bootstrap: [AppComponent]
